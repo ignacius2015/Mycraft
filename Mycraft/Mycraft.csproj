@@ -63,6 +63,9 @@
     <Reference Include="commons-io-2.4">
       <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\commons-io-2.4.dll</HintPath>
     </Reference>
+    <Reference Include="commons-lang3">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\commons-lang3.dll</HintPath>
+    </Reference>
     <Reference Include="commons-logging-1.1.3">
       <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\commons-logging-1.1.3.dll</HintPath>
     </Reference>
@@ -230,13 +233,24 @@
   <ItemGroup>
     <Compile Include="mcp\mobius\waila\Waila.cs" />
     <Compile Include="net\minecraft\util\AxisAlignedBB.cs" />
+    <Compile Include="net\minecraft\util\IIcon.cs" />
     <Compile Include="net\minecraft\util\IJsonSerializable.cs" />
+    <Compile Include="net\minecraft\util\IObjectIntIterable.cs" />
+    <Compile Include="net\minecraft\util\IProgressUpdate.cs" />
+    <Compile Include="net\minecraft\util\IRegistry.cs" />
+    <Compile Include="net\minecraft\util\JsonSerializableSet.cs" />
+    <Compile Include="net\minecraft\util\JsonUtils.cs" />
     <Compile Include="net\minecraft\util\MathHelper.cs" />
     <Compile Include="net\minecraft\util\MinecraftError.cs" />
     <Compile Include="net\minecraft\util\MouseFilter.cs" />
     <Compile Include="net\minecraft\util\MouseHelper.cs" />
     <Compile Include="net\minecraft\util\MovementInput.cs" />
+    <Compile Include="net\minecraft\util\StringUtils.cs" />
+    <Compile Include="net\minecraft\util\Tuple.cs" />
+    <Compile Include="net\minecraft\util\TupleIntJsonSerializable.cs" />
+    <Compile Include="net\minecraft\util\Util.cs" />
     <Compile Include="net\minecraft\util\Vec3.cs" />
+    <Compile Include="net\minecraft\util\WeightedRandom.cs" />
     <Compile Include="Start.cs" />
   </ItemGroup>
   <ItemGroup>
