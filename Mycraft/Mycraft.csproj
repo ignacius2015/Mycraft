@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{371AFDB4-F8ED-421A-9368-A16407282B05}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mycraft</RootNamespace>
+    <AssemblyName>Mycraft</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="akka-actor_2.11-2.3.3">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\akka-actor_2.11-2.3.3.dll</HintPath>
+    </Reference>
+    <Reference Include="authlib-1.5.21">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\authlib-1.5.21.dll</HintPath>
+    </Reference>
+    <Reference Include="codecjorbis-20101023">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\codecjorbis-20101023.dll</HintPath>
+    </Reference>
+    <Reference Include="codecwav-20101023">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\codecwav-20101023.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="commons-codec-1.9">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\commons-codec-1.9.dll</HintPath>
+    </Reference>
+    <Reference Include="commons-io-2.4">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\commons-io-2.4.dll</HintPath>
+    </Reference>
+    <Reference Include="commons-logging-1.1.3">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\commons-logging-1.1.3.dll</HintPath>
+    </Reference>
+    <Reference Include="config-1.2.1">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\config-1.2.1.dll</HintPath>
+    </Reference>
+    <Reference Include="gson-2.2.4">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\gson-2.2.4.dll</HintPath>
+    </Reference>
+    <Reference Include="guava-16.0">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\guava-16.0.dll</HintPath>
+    </Reference>
+    <Reference Include="icu4j-core-mojang-51.2">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\icu4j-core-mojang-51.2.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.AWT.WinForms, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.AWT.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Beans, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Beans.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Charsets, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Charsets.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Cldrdata, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Cldrdata.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Corba, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Corba.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Jdbc, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Jdbc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Localedata, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Localedata.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Management, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Management.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Media, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Media.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Misc, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Misc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Naming, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Naming.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Nashorn, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Nashorn.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Remoting, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Remoting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Security, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.SwingAWT, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.SwingAWT.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Text, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Text.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Tools, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Tools.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Util.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.API, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.API.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Bind, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.Bind.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Crypto, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.Crypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Parse, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.Parse.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Transform, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.Transform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.WebServices, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.WebServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.XPath, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.XPath.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.Runtime, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IKVM.Runtime.JNI, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.Runtime.JNI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="jopt-simple-4.5">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\jopt-simple-4.5.dll</HintPath>
+    </Reference>
+    <Reference Include="libraryjavasound-20101123">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\libraryjavasound-20101123.dll</HintPath>
+    </Reference>
+    <Reference Include="librarylwjglopenal-20100824">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\librarylwjglopenal-20100824.dll</HintPath>
+    </Reference>
+    <Reference Include="lwjgl">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\lwjgl.dll</HintPath>
+    </Reference>
+    <Reference Include="lzma-0.0.1">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\lzma-0.0.1.dll</HintPath>
+    </Reference>
+    <Reference Include="netty-all-4.0.10.Final">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\netty-all-4.0.10.Final.dll</HintPath>
+    </Reference>
+    <Reference Include="realms-1.3.5">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\realms-1.3.5.dll</HintPath>
+    </Reference>
+    <Reference Include="slf4j-api, Version=1.7.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\slf4j-api.1.7.5\lib\net35\slf4j-api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="slf4j-NetCommonLogging, Version=1.7.5.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\slf4j-NetCommonLogging.1.7.5.2\lib\net35\slf4j-NetCommonLogging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="soundsystem-20120107">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\soundsystem-20120107.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="vecmath-1.3.1">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\vecmath-1.3.1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="mcp\mobius\waila\Waila.cs" />
+    <Compile Include="net\minecraft\util\AxisAlignedBB.cs" />
+    <Compile Include="net\minecraft\util\IJsonSerializable.cs" />
+    <Compile Include="net\minecraft\util\MathHelper.cs" />
+    <Compile Include="net\minecraft\util\MinecraftError.cs" />
+    <Compile Include="net\minecraft\util\MouseFilter.cs" />
+    <Compile Include="net\minecraft\util\MouseHelper.cs" />
+    <Compile Include="net\minecraft\util\MovementInput.cs" />
+    <Compile Include="net\minecraft\util\Vec3.cs" />
+    <Compile Include="Start.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="au\com\bytecode\opencsv\bean\" />
+    <Folder Include="mcp\mobius\wailacore\asm\" />
+    <Folder Include="mcp\mobius\waila\addons\" />
+    <Folder Include="mcp\mobius\waila\api\" />
+    <Folder Include="mcp\mobius\waila\cbcore\" />
+    <Folder Include="mcp\mobius\waila\client\" />
+    <Folder Include="mcp\mobius\waila\commands\" />
+    <Folder Include="mcp\mobius\waila\gui\" />
+    <Folder Include="mcp\mobius\waila\gui_old\" />
+    <Folder Include="mcp\mobius\waila\handlers\" />
+    <Folder Include="mcp\mobius\waila\network\" />
+    <Folder Include="mcp\mobius\waila\overlay\" />
+    <Folder Include="mcp\mobius\waila\server\" />
+    <Folder Include="mcp\mobius\waila\utils\" />
+    <Folder Include="net\minecraft\block\" />
+    <Folder Include="net\minecraft\client\" />
+    <Folder Include="net\minecraft\command\" />
+    <Folder Include="net\minecraft\crash\" />
+    <Folder Include="net\minecraft\creativetab\" />
+    <Folder Include="net\minecraft\dispenser\" />
+    <Folder Include="net\minecraft\enchantment\" />
+    <Folder Include="net\minecraft\entity\" />
+    <Folder Include="net\minecraft\event\" />
+    <Folder Include="net\minecraft\init\" />
+    <Folder Include="net\minecraft\inventory\" />
+    <Folder Include="net\minecraft\item\" />
+    <Folder Include="net\minecraft\nbt\" />
+    <Folder Include="net\minecraft\network\" />
+    <Folder Include="net\minecraft\pathfinding\" />
+    <Folder Include="net\minecraft\potion\" />
+    <Folder Include="net\minecraft\profiler\" />
+    <Folder Include="net\minecraft\realms\" />
+    <Folder Include="net\minecraft\scoreboard\" />
+    <Folder Include="net\minecraft\server\" />
+    <Folder Include="net\minecraft\stats\" />
+    <Folder Include="net\minecraft\tileentity\" />
+    <Folder Include="net\minecraft\village\" />
+    <Folder Include="net\minecraft\world\" />
+    <Folder Include="resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="au\com\bytecode\opencsv\package.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
