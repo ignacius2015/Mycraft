@@ -40,9 +40,6 @@
     <Reference Include="akka-actor_2.11-2.3.3">
       <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\akka-actor_2.11-2.3.3.dll</HintPath>
     </Reference>
-    <Reference Include="authlib-1.5.21">
-      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\authlib-1.5.21.dll</HintPath>
-    </Reference>
     <Reference Include="codecjorbis-20101023">
       <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\codecjorbis-20101023.dll</HintPath>
     </Reference>
@@ -71,12 +68,6 @@
     </Reference>
     <Reference Include="config-1.2.1">
       <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\config-1.2.1.dll</HintPath>
-    </Reference>
-    <Reference Include="gson-2.2.4">
-      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\gson-2.2.4.dll</HintPath>
-    </Reference>
-    <Reference Include="guava-16.0">
-      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\guava-16.0.dll</HintPath>
     </Reference>
     <Reference Include="icu4j-core-mojang-51.2">
       <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\icu4j-core-mojang-51.2.dll</HintPath>
@@ -225,6 +216,9 @@
     <Reference Include="soundsystem-20120107">
       <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\soundsystem-20120107.dll</HintPath>
     </Reference>
+    <Reference Include="srv">
+      <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\srv.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="vecmath-1.3.1">
       <HintPath>..\..\..\..\..\..\..\ikvm-8.1.5717.0\bin\vecmath-1.3.1.dll</HintPath>
@@ -232,19 +226,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="mcp\mobius\waila\Waila.cs" />
+    <Compile Include="net\minecraft\event\ClickEvent.cs" />
+    <Compile Include="net\minecraft\event\HoverEvent.cs" />
     <Compile Include="net\minecraft\util\AxisAlignedBB.cs" />
+    <Compile Include="net\minecraft\util\ChatAllowedCharacters.cs" />
+    <Compile Include="net\minecraft\util\ChatComponentTranslationFormatException.cs" />
+    <Compile Include="net\minecraft\util\ChunkCoordinates.cs" />
+    <Compile Include="net\minecraft\util\CryptManager.cs" />
+    <Compile Include="net\minecraft\util\Direction.cs" />
+    <Compile Include="net\minecraft\util\EnchantmentNameParts.cs" />
+    <Compile Include="net\minecraft\util\EnumFacing.cs" />
+    <Compile Include="net\minecraft\util\Facing.cs" />
+    <Compile Include="net\minecraft\util\IChatComponent.cs" />
     <Compile Include="net\minecraft\util\IIcon.cs" />
     <Compile Include="net\minecraft\util\IJsonSerializable.cs" />
+    <Compile Include="net\minecraft\util\IntHashMap.cs" />
     <Compile Include="net\minecraft\util\IObjectIntIterable.cs" />
     <Compile Include="net\minecraft\util\IProgressUpdate.cs" />
     <Compile Include="net\minecraft\util\IRegistry.cs" />
     <Compile Include="net\minecraft\util\JsonSerializableSet.cs" />
     <Compile Include="net\minecraft\util\JsonUtils.cs" />
+    <Compile Include="net\minecraft\util\LongHashMap.cs" />
     <Compile Include="net\minecraft\util\MathHelper.cs" />
     <Compile Include="net\minecraft\util\MinecraftError.cs" />
     <Compile Include="net\minecraft\util\MouseFilter.cs" />
     <Compile Include="net\minecraft\util\MouseHelper.cs" />
     <Compile Include="net\minecraft\util\MovementInput.cs" />
+    <Compile Include="net\minecraft\util\ObjectIntIdentityMap.cs" />
+    <Compile Include="net\minecraft\util\Session.cs" />
+    <Compile Include="net\minecraft\util\StatCollector.cs" />
+    <Compile Include="net\minecraft\util\StringTranslate.cs" />
     <Compile Include="net\minecraft\util\StringUtils.cs" />
     <Compile Include="net\minecraft\util\Tuple.cs" />
     <Compile Include="net\minecraft\util\TupleIntJsonSerializable.cs" />
@@ -276,7 +287,6 @@
     <Folder Include="net\minecraft\dispenser\" />
     <Folder Include="net\minecraft\enchantment\" />
     <Folder Include="net\minecraft\entity\" />
-    <Folder Include="net\minecraft\event\" />
     <Folder Include="net\minecraft\init\" />
     <Folder Include="net\minecraft\inventory\" />
     <Folder Include="net\minecraft\item\" />
